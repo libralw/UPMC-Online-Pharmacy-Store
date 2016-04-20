@@ -1,0 +1,432 @@
+<link href="css/style-header.css" rel="stylesheet">
+<script src="js/handlebars-v2.0.0.js"></script>
+<Nav  class = "navbar navbar-default navbar-fixed-top"  role = "navigation" > 
+  <div  class = "container-fluid" > 
+    <! - Brand and toggle get grouped for better mobile display -> 
+    <div  class = "navbar-header " > 
+      <button  type = "button"  class = "navbar-toggle collapsed"  data-toggle= "collapse"  data-target= "#bs-example-navbar-collapse-1" > 
+        <span  class= "sr-only" > Toggle navigation </span> 
+        <span  class= "icon-bar" ></span> 
+        <span  class= "icon-bar" ></span> 
+        <span  class= "icon-bar" ></span> 
+      </button> 
+     
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    
+      <ul class="nav navbar-nav">
+      <li><a id="logo-outer"  href="index.html"><img alt="logo" id="logo" src="img/logo.png"></a></li>
+        <li><a href="https://www.upmchealthplan.com/">Health Info</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop Products<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+             <li><a href="productlist.html">Cough, Cold & Flu</a></li>
+             <li><a href="productlist.html">Pain Relief & Management</a></li>
+             <li><a href="productlist.html">Allergy & Sinus</a></li>
+             <li><a href="productlist.html">Digestive Health & Nausea</a></li>
+             <li><a href="productlist.html">Children's Health Care</a></li>
+             <li><a href="productlist.html">Home Tests & Monitoring</a></li>
+             <li><a href="productlist.html">Stop Smoking</a></li>
+             <li><a href="productlist.html">Skin Ailments</a></li>
+             <li><a href="productlist.html">Homeopathic Remedies</a></li>
+             <li><a href="productlist.html">First Aid</a></li>
+             <li><a href="productlist.html">Pill Organization</a></li>
+             <li><a href="productlist.html">Eye Care</a></li>
+             <li><a href="productlist.html">Ear, Nose & Throat Care</a></li>
+             <li><a href="productlist.html">Foot Care</a></li>
+             <li><a href="productlist.html">Sleep & Snoring Aids</a></li>
+             <li><a href="productlist.html">Supports & Braces</a></li>
+             <li><a href="productlist.html">Feminine Care</a></li>
+             <li><a href="productlist.html">Incontinence</a></li>
+            <li class="divider"></li>
+            <li><a href="productlist.html">All Products</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+      <div class="navbar-form navbar-left"   id="search">
+        <div id="scrollable-dropdown-menu">
+  <input id="typeaheadinput" class="typeahead" size="40" type="text" placeholder="Search" >
+  
+</div>
+
+       
+      </div>
+       <ul class=" navbar-form nav navbar-nav">
+        <button type="submit" id = "searchButton"
+						class="btn btn-success">Go</button>
+        </ul>
+  
+
+     
+      <div id="signinButton" class="navbar-form navbar-right">
+      
+					<button type="submit" data-toggle="modal" data-target="#myModal"
+						class="btn btn-success">Sign in</button>
+				</div>
+				<div id="signout" class="navbar-form navbar-right">
+       Welcome, Superman!  
+       
+					<button id="signoutButton"
+						class="btn btn-success">Sign out</button>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+            <li><a href="Shopping Cart.html">My Shopping Cart</a></li>
+            
+          </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+					</button>
+					<h4 class="modal-title">Have you got an account?</h4>
+				</div>
+				<div class="modal-body">
+					<div class="well">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#login" data-toggle="tab">Login</a></li>
+							<li><a href="#create" data-toggle="tab">Create Account</a></li>
+						</ul>
+						<div id="myTabContent" class="tab-content">
+							<div class="tab-pane active in" id="login">
+								<form id="loginForm" method="POST">
+									<fieldset>
+										<legend></legend>
+										<div class="form-group">
+											<label class="control-label">Email address</label>
+											<div class="controls">
+												<input type="text" class="form-control" name="email" />
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label class="control-label">Password</label>
+											<div class="controls">
+												<input type="password" class="form-control" name="password" />
+											</div>
+										</div>
+
+
+										<div class="form-group">
+											<div class="control-group">
+												<!-- Button -->
+												<div class="controls">
+													<button type="submit" class="btn btn-success">Login</button>
+												</div>
+											</div>
+										</div>
+										<a href = "#"> Forget Password </a>
+									</fieldset>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="create">
+								<form id="registrationForm" method="post">
+									<legend></legend>
+									<div class="form-group">
+										<label class="control-label">Username</label>
+										<div class="controls">
+											<input type="text" class="form-control" name="username" />
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label">Email address</label>
+										<div class="controls">
+											<input type="text" class="form-control" name="email" />
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label">Password</label>
+										<div class="controls">
+											<input type="password" class="form-control" name="password" />
+										</div>
+									</div>
+
+									<div class="form-group">
+										<div class="controls">
+											<!-- Do NOT use name="submit" or id="submit" for the Submit button -->
+											<button type="submit" class="btn btn-success">Sign
+												up</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+<br><br><br>
+
+	<script>
+	function createCookie(name,value,days) {
+	    if (days) {
+	        var date = new Date();
+	        date.setTime(date.getTime()+(days*24*60*60*1000));
+	        var expires = "; expires="+date.toGMTString();
+	    }
+	    else var expires = "";
+	    document.cookie = name+"="+value+expires+"; path=/";
+	}
+
+	function readCookie(name) {
+	    var nameEQ = name + "=";
+	    var ca = document.cookie.split(';');
+	    for(var i=0;i < ca.length;i++) {
+	        var c = ca[i];
+	        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+	        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	    }
+	    return null;
+	}
+
+	function eraseCookie(name) {
+	    createCookie(name,"",-1);
+	}
+	var substringMatcher = function(strs) {
+		  return function findMatches(q, cb) {
+		    var matches, substrRegex;
+		 
+		    // an array that will be populated with substring matches
+		    matches = [];
+		 
+		    // regex used to determine if a string contains the substring `q`
+		    substrRegex = new RegExp(q, 'i');
+		 
+		    // iterate through the pool of strings and for any string that
+		    // contains the substring `q`, add it to the `matches` array
+		    $.each(strs, function(i, str) {
+		      if (substrRegex.test(str)) {
+		        // the typeahead jQuery plugin expects suggestions to a
+		        // JavaScript object, refer to typeahead docs for more info
+		        matches.push({ value: str });
+		        matches.push({value: '&nbsp;&nbsp;&nbsp;&nbsp;in Diet & Fitness'});
+		        matches.push({value: '&nbsp;&nbsp;&nbsp;&nbsp;in Household'});
+		        matches.push({value: '&nbsp;&nbsp;&nbsp;&nbsp;in Medicines & Treatments'});
+		        matches.push({value: '&nbsp;&nbsp;&nbsp;&nbsp;in Personal Care'});
+		        
+		      }
+		    });
+		 
+		    cb(matches);
+		  };
+		};
+		 
+		var states = ['Aspirin', 'SleepCaps'
+		];
+		 
+		$('#scrollable-dropdown-menu .typeahead').typeahead({
+		  hint: false,
+		  highlight: false,
+		  minLength: 1,
+		
+		},
+		
+		
+		{
+		  name: 'states',
+		  displayKey: 'value',
+		  source: substringMatcher(states),
+		 
+		});
+		$('input.typeahead').on('typeahead:cursorchanged', function(event, selection) {
+			$('#typeaheadinput').val('Aspirin');
+			 
+			});
+		
+		$('input.typeahead').on('typeahead:selected', function(event, selection) {
+			$('#typeaheadinput').val('Aspirin');
+			  // the second argument has the info you want
+			  window.location = 'Searchresults.html';
+			  
+			  // clearing the selection requires a typeahead method
+			  $(this).typeahead('setQuery', '');
+			});
+		
+		$('input.typeahead').on('keyup', this, function (event) {
+	        if (event.keyCode == 13) {
+	        	$('#typeaheadinput').val('Aspirin');
+	        	 window.location = 'Searchresults.html';
+	        }
+	    });
+		$('#searchButton').click(function (e) {
+			$('#typeaheadinput').val('Aspirin');
+			 window.location = 'Searchresults.html';
+		});
+		$(document)
+				.ready(
+						
+						function() {
+							
+							var x = readCookie('userName')
+				            if (x) {
+				            	$('#signinButton').hide();
+								
+				            }
+				            else {
+				            	$('#signout').hide();
+							
+				            }
+							$('#signoutButton').click(function(e) {
+					            $('#signinButton').show();
+					            $('#signout').hide();
+					            eraseCookie('userName');
+					        });
+							
+							$('#registrationForm')
+									.bootstrapValidator(
+											{
+												// To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+												feedbackIcons : {
+													valid : 'glyphicon glyphicon-ok',
+													invalid : 'glyphicon glyphicon-remove',
+													validating : 'glyphicon glyphicon-refresh'
+												},
+												fields : {
+													username : {
+														message : 'The username is not valid',
+														validators : {
+															notEmpty : {
+																message : 'The username is required and cannot be empty'
+															},
+															stringLength : {
+																min : 6,
+																max : 30,
+																message : 'The username must be more than 6 and less than 30 characters long'
+															},
+															regexp : {
+																regexp : /^[a-zA-Z0-9]+$/,
+																message : 'The username can only consist of alphabetical and number'
+															},
+															different : {
+																field : 'password',
+																message : 'The username and password cannot be the same as each other'
+															}
+														}
+													},
+													email : {
+														validators : {
+															notEmpty : {
+																message : 'The email address is required and cannot be empty'
+															},
+															emailAddress : {
+																message : 'The email address is not a valid'
+															}
+														}
+													},
+													password : {
+														validators : {
+															notEmpty : {
+																message : 'The password is required and cannot be empty'
+															},
+															different : {
+																field : 'username',
+																message : 'The password cannot be the same as username'
+															},
+															stringLength : {
+																min : 8,
+																message : 'The password must have at least 8 characters'
+															}
+														}
+													}
+
+												}
+											})
+											.on('success.form.bv', function(e) {
+									            // Prevent form submission
+									            e.preventDefault();
+									            $('#myModal').modal('hide');
+									            $('#signinButton').hide();
+									            $('#signout').show();
+									            createCookie('userName','Superman',7);
+											 });
+									            
+							$('#loginForm')
+									.bootstrapValidator(
+											{
+												// To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+												feedbackIcons : {
+													valid : 'glyphicon glyphicon-ok',
+													invalid : 'glyphicon glyphicon-remove',
+													validating : 'glyphicon glyphicon-refresh'
+												},
+												fields : {
+													username : {
+														message : 'The username is not valid',
+														validators : {
+															notEmpty : {
+																message : 'The username is required and cannot be empty'
+															},
+															stringLength : {
+																min : 6,
+																max : 30,
+																message : 'The username must be more than 6 and less than 30 characters long'
+															},
+															regexp : {
+																regexp : /^[a-zA-Z0-9]+$/,
+																message : 'The username can only consist of alphabetical and number'
+															},
+															different : {
+																field : 'password',
+																message : 'The username and password cannot be the same as each other'
+															}
+														}
+													},
+													email : {
+														validators : {
+															notEmpty : {
+																message : 'The email address is required and cannot be empty'
+															},
+															emailAddress : {
+																message : 'The email address is not a valid'
+															}
+														}
+													},
+													password : {
+														validators : {
+															notEmpty : {
+																message : 'The password is required and cannot be empty'
+															},
+															different : {
+																field : 'username',
+																message : 'The password cannot be the same as username'
+															},
+															stringLength : {
+																min : 8,
+																message : 'The password must have at least 8 characters'
+															}
+														}
+													}
+
+												}
+											})
+											.on('success.form.bv', function(e) {
+									            // Prevent form submission
+									            e.preventDefault();
+									            $('#myModal').modal('hide');
+									            $('#signinButton').hide();
+									            $('#signout').show();
+									            createCookie('userName','Superman',7);
+
+									            
+									        });
+							
+							
+						
+							
+						});
+	</script>

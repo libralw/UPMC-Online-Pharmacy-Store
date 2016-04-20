@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Shipping</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+<!--script src="js/less-1.3.3.min.js"></script-->
+<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+
+<link class="cssdeck" rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css"
+	class="cssdeck">
+<link rel="stylesheet" href="css/bootstrapValidator.min.css" />
+<link href="css/carousel.css" rel="stylesheet">
+<link href="css/style-index.css" rel="stylesheet">
+<body>
+
+	<!-- Copy Start>
+================================================== -->
+
+	<script src="js/jquery.min.js"></script>
+	<script class="cssdeck" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+	<script type="text/javascript" src="js/typeahead.bundle.js"></script>
+	<script>
+		$(function() {
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
+		});
+	</script>
+	<div id="header"></div>
+	<!-- Copy End>
+
+<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144"
+		href="img/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114"
+		href="img/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72"
+		href="img/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed"
+		href="img/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon" href="img/favicon.png">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row clearfix">
+			<br> <br> <br> <br>
+
+			<ul class="nav nav-pills">
+				<li><a href="Shipping.html"><b><ins>Shipping
+								Address >> </ins></b></a></li>
+				<li><a href="ShippingMethod.html">Shipping Method >> </a></li>
+				<li><a href="Payment.html">Payment Information >> </a></li>
+				<li><a href="ReviewOrder.html">Order Review >> </a></li>
+				<li class="disabled"><a href="#">Order Confirmation </a></li>
+			</ul>
+
+			<hr>
+			<div class="col-md-8 column">
+
+				<h4>1. Shipping Address</h4>
+				<p>Please enter a shipping address for this order.</p>
+				<form class="form-horizontal" role="form">
+					<div class="form-group">
+						<label for="inputFirstName" class="col-sm-2 control-label">First
+							Name </label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="inputFirstName">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputLastName" class="col-sm-2 control-label">Last
+							Name </label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="inputLastName">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputAddress" class="col-sm-2 control-label">Address
+						</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="inputAddress">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputCity" class="col-sm-2 control-label">City
+						</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="inputCity">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputLastName" class="col-sm-2 control-label">State
+						</label>
+						<div class="col-sm-10">
+							<select name="State">
+								<option value="select">Select a state</option>
+								<option value="AL">AL - Alabama</option>
+								<option value="AK">AK - Alaska</option>
+								<option value="AS">AS - American Samoa</option>
+								<option value="AZ">AZ - Arizona</option>
+								<option value="AR">AR - Arkansas</option>
+								<option value="CA">CA - California</option>
+								<option value="CO">CO - Colorado</option>
+								<option value="CT">CT - Connecticut</option>
+								<option value="DE">DE - Delaware</option>
+								<option value="DC">DC - District of Columbia</option>
+								<option value="FL">FL - Florida</option>
+								<option value="GA">GA - Georgia</option>
+								<option value="GU">GU - Guam</option>
+								<option value="HI">HI - Hawaii</option>
+								<option value="ID">ID - Idaho</option>
+								<option value="IL">IL - Illinois</option>
+								<option value="IN">IN - Indiana</option>
+								<option value="IA">IA - Iowa</option>
+								<option value="KS">KS - Kansas</option>
+								<option value="KY">KY - Kentucky</option>
+								<option value="LA">LA - Louisiana</option>
+								<option value="ME">ME - Maine</option>
+								<option value="MD">MD - Maryland</option>
+								<option value="MA">MA - Massachusetts</option>
+								<option value="MI">MI - Michigan</option>
+								<option value="MN">MN - Minnesota</option>
+								<option value="MS">MS - Mississippi</option>
+								<option value="MO">MO - Missouri</option>
+								<option value="MT">MT - Montana</option>
+								<option value="NE">NE - Nebraska</option>
+								<option value="MP">MP - Northern Marianas Islands</option>
+								<option value="NV">NV - Nevada</option>
+								<option value="NH">NH - New Hampshire</option>
+								<option value="NJ">NJ - New Jersey</option>
+								<option value="NM">NM - New Mexico</option>
+								<option value="NY">NY - New York</option>
+								<option value="NC">NC - North Carolina</option>
+								<option value="ND">ND - North Dakota</option>
+								<option value="OH">OH - Ohio</option>
+								<option value="OK">OK - Oklahoma</option>
+								<option value="OR">OR - Oregon</option>
+								<option value="PA">PA - Pennsylvania</option>
+								<option value="PR">PR - Puerto Rico</option>
+								<option value="RI">RI - Rhode Island</option>
+								<option value="SC">SC - South Carolina</option>
+								<option value="SD">SD - South Dakota</option>
+								<option value="TN">TN - Tennessee</option>
+								<option value="TX">TX - Texas</option>
+								<option value="UT">UT - Utah</option>
+								<option value="VT">VT - Vermont</option>
+								<option value="VA">VA - Virginia</option>
+								<option value="VI">VI - Virgin Islands</option>
+								<option value="WA">WA - Washington</option>
+								<option value="WV">WV - West Virginia</option>
+								<option value="WI">WI - Wisconsin</option>
+								<option value="WY">WY - Wyoming</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputZip" class="col-sm-2 control-label">Zip
+							Code </label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="inputZip">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputEmail" class="col-sm-2 control-label">Email
+						</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="inputEmail"
+								placeholder="name@email.com">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputPassword" class="col-sm-2 control-label">Password
+						</label>
+						<div class="col-sm-10">
+							<input type="password" class="form-control" id="inputPassword">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputPhone" class="col-sm-2 control-label">Phone
+							Number </label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="inputPhone"
+								placeholder="000-000-0000">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<div class="checkbox">
+								<label><input type="checkbox"> Get UPMC online
+									and in-store deals </label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button onclick="location.href='ShippingMethod.html'"
+								type="button" class="btn btn-primary" style="float: right;">Continue</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-4 column">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Order Summary</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Item Subtotal</td>
+							<td>$31.97</td>
+						</tr>
+						<tr>
+							<td>Estimated Shipping</td>
+							<td>$5.99</td>
+						</tr>
+						<tr>
+							<td>Estimated Total</td>
+							<td><strong>$37.96</strong></td>
+						</tr>
+					</tbody>
+				</table>
+				<button type="button" class="btn btn-primary disabled"
+					style="float: right;">Submit Order</button>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+
+	<div id="footer"></div>
+	<!-- FOOTER -->
+
+</body>
+</html>
